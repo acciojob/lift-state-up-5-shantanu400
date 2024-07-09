@@ -16,7 +16,7 @@ const changeState=()=>{
   return (
     <div>
        
-       {isLoggedIn ? <p>You Are Loggedin!</p> : <Login func={changeState}/>}
+       {<Login loginstatus={isLoggedIn} func={changeState}/>}
         
     </div>
   )

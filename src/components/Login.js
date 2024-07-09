@@ -2,7 +2,12 @@ import React from "react"
 export default function Login(props){
     return (
         <div className="roots">
-            <h1>Parent Component</h1>
+
+          {(props.loginstatus)?
+              <p>You Are Loggedin!</p>
+          :(
+<>
+<h1>Parent Component</h1>
             <form>
             <div data-mdb-input-init className="form-outline mb-4">
         <input type="email" id="loginName" className="form-control" />
@@ -16,6 +21,9 @@ export default function Login(props){
       <button type="submit" data-mdb-button-init data-mdb-ripple-init className="btn btn-primary btn-block mb-4" onClick={()=>props.func()}>Sign in</button>
             </form>
         
+</>
+          )
+        } 
       </div>
     )
 }
