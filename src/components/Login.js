@@ -2,7 +2,7 @@ import React from "react"
 export default function Login(props){
     return (
         <div className="roots">
-
+            <h1>Parent Component</h1>
         <div data-mdb-input-init className="form-outline mb-4">
           <input type="email" id="loginName" className="form-control" />
           <label className="form-label" htmlFor="loginName">Email or username</label>
