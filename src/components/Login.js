@@ -4,7 +4,7 @@ export default function Login(props){
         <div className="roots">
 
           {(props.loginstatus)?
-              <p>You Are Loggedin!</p>
+              <p>You are logged in!</p>
           :(
 <>
 <h1>Parent Component</h1>
