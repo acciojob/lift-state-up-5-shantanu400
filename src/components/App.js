@@ -1,7 +1,7 @@
 
 import React, { useState } from "react";
 import './../styles/App.css';
-import login from "./login"
+import Login from "./login";
 
 
 const App = () => {
@@ -16,7 +16,7 @@ const changeState=()=>{
   return (
     <div>
        
-       {isLoggedIn ? <p>You Are Loggedin!</p> : <login func={changeState}/>}
+       {isLoggedIn ? <p>You Are Loggedin!</p> : <Login func={changeState}/>}
         
     </div>
   )
